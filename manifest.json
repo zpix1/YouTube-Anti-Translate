@@ -7,5 +7,13 @@
         "matches": ["*://*.youtube.com/*"],
         "js": ["start.js"]
     }],
-    "web_accessible_resources": ["background.js"]
+    "web_accessible_resources": ["background.js"],
+    "browser_action": {
+        // "default_icon": "favicon.png",
+        "default_popup": "popup.html"
+        // "default_title": "ChromiePop"
+    },
+    "permissions": [
+        "storage"
+    ]
 }
