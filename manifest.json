@@ -1,7 +1,7 @@
 {
     "name": "YouTube Anti Translate",
-    "version": "0.1",
-    "description": "A small chrome extension to replace translated youtube video titles and descriptions to their originals.",
+    "version": "0.2",
+    "description": "A small extension to disable YouTube video titles autotranslation.",
     "manifest_version": 2,
     "content_scripts": [{
         "matches": ["*://*.youtube.com/*"],
@@ -9,9 +9,7 @@
     }],
     "web_accessible_resources": ["background.js"],
     "browser_action": {
-        // "default_icon": "favicon.png",
         "default_popup": "popup.html"
-        // "default_title": "ChromiePop"
     },
     "permissions": [
         "storage"
