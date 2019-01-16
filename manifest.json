@@ -1,0 +1,11 @@
+{
+    "name": "YouTube Anti Translate",
+    "version": "0.1",
+    "description": "A small chrome extension to replace translated youtube video titles and descriptions to their originals.",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["start.js"]
+    }],
+    "web_accessible_resources": ["background.js"]
+}
